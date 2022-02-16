@@ -1,0 +1,13 @@
+<h2>Movies Page</h2>
+
+{{#each movies}}
+<br>
+<ul>
+<li>{{this.title}}</li>
+<li>{{this.plot}}</li>
+<li>{{this.genre}}</li>
+<li>{{this.celebrity}}</li> 
+<a href="/movies/{{_id}}"> ses Deatils </a>      
+</ul>
+<hr>
+{{/each}}

@@ -1,0 +1,30 @@
+<h2>New celebrity</h2>
+
+<form action="/movies/create" method="POST">
+  <label> title:
+    <input type="text" name="title" />
+  </label>
+  <label> genre:
+    <input type="text" name="genre" />
+  </label>
+  <label> plot:
+    <input type="text" name="plot" />
+ </label>
+    <label for="Celebrity"> Created by:
+    <select name="Celebrity" multiple>
+      <option disable selected value=""></option>
+      {{#each dbCeleb}}
+        <option value="{{this._id}}"> {{this.name}} </option>
+      {{/each}}
+    </select>
+  </label>
+  <br>
+
+  <button type="submit"> Add New  </button>
+</form>
+
+<!--<div>
+  {{#if message}}
+    <p><b>{{message}}</b></p>
+  {{/if}}
+</div>-->
