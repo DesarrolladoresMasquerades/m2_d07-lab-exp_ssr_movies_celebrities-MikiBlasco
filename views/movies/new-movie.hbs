@@ -11,10 +11,10 @@
     <input type="text" name="plot" />
  </label>
     <label for="Celebrity"> Created by:
-    <select name="Celebrity" multiple>
+    <select name="cast" multiple>
       <option disable selected value=""></option>
       {{#each dbCeleb}}
-        <option value="{{this._id}}"> {{this.name}} </option>
+        <option value="{{this._id}}">{{name}}</option>
       {{/each}}
     </select>
   </label>
@@ -23,8 +23,3 @@
   <button type="submit"> Add New  </button>
 </form>
 
-<!--<div>
-  {{#if message}}
-    <p><b>{{message}}</b></p>
-  {{/if}}
-</div>-->

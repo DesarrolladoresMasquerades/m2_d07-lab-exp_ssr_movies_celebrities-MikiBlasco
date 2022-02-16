@@ -26,6 +26,8 @@ router.post("/movies/create", (req, res) =>
           
 });
 
+
+
 router.get("/movies", (req, res) => {
     Movie.find()
     .then((movies)=>{
